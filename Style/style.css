@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+    color: rgb(37, 37, 37);
+}
+
+.wrapper {
+    width: auto;
+    height: fit-content;
+    justify-content: center;
+    /* background-color: bisque; */
+}
+
+.header {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    /* background-color: darkseagreen; */
+    justify-content: space-between;
+    line-height: 2.5rem;
+    .navbar {
+        ul {
+            display: flex;
+            list-style: none;
+            li {
+                color: rgb(64, 64, 64);
+                font-weight: 700;
+                padding: 1.5rem;
+            }
+        }
+    }
+    .utinity {
+        display: flex;
+        align-items: center;
+        .search-bar {
+            width: 30rem;
+            height: 3rem;
+            border: 0.125rem, solid, green;
+            border-radius: 3rem;
+            margin-right: 2rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            line-height: 3.2rem;
+            i {
+                width: 2.5rem;
+                height: 2.5rem;
+                text-align: center;
+                line-height: 3.25rem;
+                color: green;
+                margin-left: 0.5rem;
+                margin-right: 0.25rem;
+            }
+        }
+
+        .others {
+            i {
+                width: 2.5rem;
+                height: 2.5rem;
+                text-align: center;
+                line-height: 2.5rem;
+                color: green;
+                margin-right: 0.25rem;
+            }
+        }
+    }
+}
+
+.banner {
+    margin-bottom: 1.25rem;
+    background-image: url("/Img/bg_breadcrumb.png");
+    background-size: cover;
+    height: 16rem;
+    p {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 6rem;
+    }
+}
+
+.main {
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 3rem;
+    .category-group {
+        display: flex;
+        margin-bottom: 5rem;
+        .category {
+            width: 21.25rem;
+            height: 20rem;
+            /* border: 0.125rem, solid, rgb(192, 192, 192); */
+            border-radius: 0.5rem;
+            margin-right: 0.75rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+
+            button {
+                font-size: large;
+                font-weight: 500;
+                width: 12rem;
+                height: 3rem;
+                color: rgb(69, 202, 69);
+                border: 0.125rem, solid, rgb(69, 202, 69);
+                margin-top: 13rem;
+                border-radius: 2rem;
+                background-color: white;
+            }
+        }
+        #food, #salad, #fruit, #vegetable, #sauces {
+            background-size: 21.25rem 20rem;
+        }
+        #food {
+            background-image: url("/Img/HomeTab_1.png");
+        }
+        #salad {
+            background-image: url("/Img/HomeTab_2.png");
+        }
+        #fruit {
+            background-image: url("/Img/HomeTab_3.png");
+        }
+        #vegetable {
+            background-image: url("/Img/HomeTab_4.png");
+        }
+        #sauces {
+            background-image: url("/Img/HomeTab_5.png");
+        }   
+    }
+    .product-group {
+        display: flex;
+        flex-wrap: wrap;
+        .product {
+            width: 18rem;
+            height: 25.5rem;
+            border: 0.125rem, solid, rgb(192, 192, 192);
+            border-radius: 0.5rem;
+            margin-right: 0.75rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+        }
+
+        button {
+            font-size: large;
+                font-weight: 500;
+                width: 12rem;
+                height: 3rem;
+                color: rgb(69, 202, 69);
+                border: 0.125rem, solid, rgb(69, 202, 69);
+                margin-top: 20rem;
+                border-radius: 0.5rem;
+                background-color: white;
+        }
+    }
+}
+
+.footer {
+    font-size: 0.875rem;
+    width: 62.5%;
+    margin: auto;
+
+    .content {
+        display: flex;
+        /* background-color: aqua; */
+        margin-bottom: 1.875rem;
+        justify-content: space-evenly;
+
+        .contact {
+            width: 21.5rem;
+
+            img {
+                width: 21rem;
+                margin-bottom: 2.125rem;
+            }
+
+            #brandname{
+                margin-bottom: 1.25rem;
+            }
+
+            .contact-info {
+                width: 21rem;
+                margin-bottom: 1.25rem;
+                display: flex;
+                
+                i {
+                    width: 2rem;
+                    height: 2rem;
+                    margin-right: 0.5rem;
+                    border: 0.125rem, solid, green;
+                    border-radius: 100%;
+                    text-align: center;
+                    line-height: 2rem;
+                }
+
+                #phone, #email {
+                    line-height: 2.5rem;
+                }
+                a {
+                    line-height: 0.75rem;
+                }
+            }
+        }
+
+        .support-menu {
+            display: flex;
+            margin-top: 4rem;
+            
+            .table-menu {
+                margin-right: 4rem;          
+                #menu-title {
+                    font-weight: 700;
+                    margin-bottom: 1.125rem;
+                }
+                ul {
+                    list-style: none;
+                }
+                li {
+                    margin-bottom: 1.125rem;
+                }
+            }
+        }
+    }
+}
+
+.credit{
+    width: 100%;
+    background-color: #E8D3C7;
+    text-align: center;
+    span {
+        color: green;
+    }
+}
